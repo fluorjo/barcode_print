@@ -14,6 +14,7 @@ from PIL import Image
 hr=barcode.get_barcode_class('ean13')
  
 class bbbb(object):
+ #이렇게 input함수 이용해서 프롬프트에서 값을 입력 받게 하는 건 가능한데... 이걸 UI에서 되게 하고 싶습니다...!
     number=input()
     j=EAN13(number,writer=ImageWriter())
     j.save("kkkkk")   
