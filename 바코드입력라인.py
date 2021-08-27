@@ -20,7 +20,7 @@ window.title("바코드 입력창")
 window.geometry("200x50")
 window.resizable(False, False)
 
-def calc(event):
+def bar(event):
     number=input()
     j=EAN13(number,writer=ImageWriter())
     j.save("barcode")   
@@ -29,7 +29,7 @@ def calc(event):
     resize_image.save('C:/Users/fluor/barcode1.png')
 
 entry=tkinter.Entry(window)
-entry.bind("<Return>", calc)
+entry.bind("<Return>", bar)
 entry.pack()
 
 label=tkinter.Label(window)
